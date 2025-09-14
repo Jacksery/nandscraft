@@ -2,7 +2,9 @@
 import { Github } from "lucide-react";
 
 export function Footer() {
-  const commit = process.env.VERCEL_GIT_COMMIT_SHA;
+  // Vercel only sets VERCEL_GIT_COMMIT_SHA for production and preview deployments from git
+  // For local/dev or non-git deploys, it will be undefined
+  const commit = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA;
   const repoUrl = "https://github.com/Jacksery/nandscraft";
   const shortCommit = commit ? commit.slice(0, 8) : "unknown";
   return (
