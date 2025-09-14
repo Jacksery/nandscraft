@@ -203,29 +203,6 @@ export function ServerStats() {
           )}
         </Card>
       </div>
-      {/* Online Players Card - its own row below */}
-      {!loading &&
-        data?.online &&
-        data.players?.online &&
-        data.players.list &&
-        data.players.list.length > 0 && (
-          <div className="mt-4 flex justify-center">
-            <Card className="relative min-h-[120px] w-full max-w-md">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-sm font-medium">
-                  Online Players
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="text-xs text-muted-foreground space-y-1">
-                  {data.players.list.map((player) => (
-                    <li key={player.uuid}>{player.name_clean}</li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        )}
     </>
   );
 }
