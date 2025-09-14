@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
+import { Footer } from "@/components/footer";
 
 import "./globals.css";
 
@@ -35,6 +36,7 @@ export default function RootLayout({
         <Analytics />
         <SpeedInsights />
         <Toaster />
+        <Footer />
       </body>
     </html>
   );
