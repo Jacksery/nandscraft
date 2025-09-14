@@ -12,7 +12,7 @@ export default function Home() {
               Live Server Stats
             </h2>
             <p className="text-lg text-muted-foreground">
-              Real-time information about the server performanc
+              Real-time information about the server performance
             </p>
           </div>
           <ServerStats />
