@@ -56,7 +56,7 @@ export function HeroSection() {
   async function handleDownload() {
     setLoading(true);
     window.location.href =
-      "https://zi84ql62iiexyfrs.public.blob.vercel-storage.com/NandsCraft-0.0.1.zip";
+      "https://zi84ql62iiexyfrs.public.blob.vercel-storage.com/nandscraft-0.0.2.mrpack";
     setLoading(false);
   }
 
