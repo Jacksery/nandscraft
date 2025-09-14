@@ -4,7 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import { Footer } from "@/components/footer";
-
+import { ReactLenis, useLenis } from "lenis/react";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "NandsCraft",
     images: [
       {
-        url: "/images/chicken-jockey.jpg",
+        url: "https://nandscraft.com/images/chicken-jockey.jpg",
         width: 1200,
         height: 630,
         alt: "NandsCraft",
@@ -46,6 +46,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ReactLenis root />
         {children}
         <Analytics />
         <SpeedInsights />
