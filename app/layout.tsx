@@ -20,6 +20,20 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "NandsCraft",
   description: "Official NandsCraft MC Server",
+  openGraph: {
+    title: "NandsCraft",
+    description: "Official NandsCraft MC Server",
+    url: "https://nandscraft.com",
+    siteName: "NandsCraft",
+    images: [
+      {
+        url: "/images/chicken-jockey.jpg",
+        width: 1200,
+        height: 630,
+        alt: "NandsCraft",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
