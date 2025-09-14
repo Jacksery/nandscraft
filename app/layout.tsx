@@ -5,6 +5,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import { Footer } from "@/components/footer";
 import { ReactLenis, useLenis } from "lenis/react";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "NandsCraft",
     images: [
       {
-        url: "https://nandscraft.com/images/chicken-jockey.jpg",
+        url: "/images/chicken-jockey.jpg",
         width: 1200,
         height: 630,
         alt: "NandsCraft",
