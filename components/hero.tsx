@@ -56,7 +56,7 @@ export function HeroSection() {
   async function handleDownload() {
     setLoading(true);
     window.location.href =
-      "https://zi84ql62iiexyfrs.public.blob.vercel-storage.com/NandsCraft-0.0.1.zip";
+      "https://zi84ql62iiexyfrs.public.blob.vercel-storage.com/nandscraft-0.0.2.mrpack";
     setLoading(false);
   }
 
@@ -114,7 +114,7 @@ export function HeroSection() {
           </button>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-row gap-4 justify-center">
           <Button
             size="lg"
             className="bg-primary hover:bg-primary/90"
